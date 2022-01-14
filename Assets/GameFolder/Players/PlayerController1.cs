@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerController1 : MonoBehaviour
 {
-    [Header("Velocidade do player")]
+    [Tooltip("Velocidade do player")]
     [SerializeField]
     private float speed;
 
+    [Tooltip("Posicao limite do player")]
     private float limitPosition = 2.45f;
 
     void Update()

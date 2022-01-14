@@ -7,6 +7,8 @@ TagManager:
   - Player1
   - Player2
   - Ball
+  - Ponto_p1
+  - Ponto_p2
   layers:
   - Default
   - TransparentFX
@@ -44,15 +46,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Front
-    uniqueID: 591874561
+  - name: Back
+    uniqueID: 3827824193
     locked: 0
   - name: Middle
     uniqueID: 2098495851
     locked: 0
-  - name: Back
-    uniqueID: 3827824193
-    locked: 0
   - name: Deco
     uniqueID: 3063729639
+    locked: 0
+  - name: Front
+    uniqueID: 591874561
     locked: 0
