@@ -9,6 +9,7 @@ public class PlayerController1 : MonoBehaviour
     private float speed;
 
     [Tooltip("Posicao limite do player")]
+    [SerializeField]
     private float limitPosition = 2.45f;
 
     void Update()
