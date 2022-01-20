@@ -12,16 +12,18 @@ public class PlayerController1 : MonoBehaviour
     [SerializeField]
     private float limitPosition = 2.45f;
 
+    [Tooltip("Tela de pausa")]
+    [Header("Tela de pausa")]
+    [SerializeField]
+    private Transform pauseScreen;
+
     void Update()
-    {
-        //Dependendo da tag, a movimentação do player é chamada
-        if (transform.CompareTag("Player1"))
+    { 
+         MovePlayer();
+    
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-           MovePlayer();
-        }
-        else
-        {
-            MovePlayer2();
+            pauseScreen.GetComponent<PauseGame>().enabled = !pauseScreen.GetComponent<PauseGame>().enabled;
         }
 
     }
@@ -57,34 +59,4 @@ public class PlayerController1 : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Método para movimentação do player
-    /// </summary>
-    void MovePlayer2()
-    {
-        if (transform.position.y < limitPosition)
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.Translate(new Vector2(0f, speed * Time.deltaTime));
-            }
-
-        }
-        else
-        {
-            transform.position = new Vector2(transform.position.x,limitPosition);
-        }
-
-        if (transform.position.y > -limitPosition)
-        {
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.Translate(new Vector2(0f, -speed * Time.deltaTime));
-            }
-        }
-        else
-        {
-            transform.position = new Vector2(transform.position.x,-limitPosition);
-        }
-    }
 }

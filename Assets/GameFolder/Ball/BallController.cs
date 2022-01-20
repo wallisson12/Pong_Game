@@ -17,13 +17,24 @@ public class BallController : MonoBehaviour
     private int forcaX;
     private int forcaY;
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
+    private AudioSource audioS;
 
+    [Header("Som da bola")]
+    [SerializeField]
+    private AudioClip ping;
+
+    void Awake()
+    {
+
+        audioS = GetComponent<AudioSource>();
+        rb = GetComponent<Rigidbody2D>();
         startBall();
+
     }
 
+    /// <summary>
+    /// Inicia a movimentacao da bola
+    /// </summary>
     void startBall()
     {
 
@@ -44,18 +55,31 @@ public class BallController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D outro)
     {
-        
+        //Executa o audio
+        Ping();
+
         if (outro.gameObject.CompareTag("Ponto_p1") || outro.gameObject.CompareTag("Ponto_p2"))
         {
             Restart();
         }
     }
 
-    void Restart()
+    /// <summary>
+    /// Reseta a posicao da bola
+    /// </summary>
+    public void Restart()
     {
          rb.velocity = Vector2.zero;
          transform.position = new Vector2(0f,0f);
          transform.GetComponent<TrailRenderer>().Clear();
          startBall();
+    }
+
+    /// <summary>
+    /// Executa o audio da bola
+    /// </summary>
+    void Ping()
+    {
+        audioS.PlayOneShot(ping, 0.8f);
     }
 }

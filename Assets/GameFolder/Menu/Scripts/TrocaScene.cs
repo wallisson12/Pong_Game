@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TrocaScene : MonoBehaviour
 {
+
    /// <summary>
    /// Carrega a cena para o modo Solo
    /// </summary>
@@ -19,6 +20,14 @@ public class TrocaScene : MonoBehaviour
     public void Versus(string nome)
     {
         StartCoroutine(Inicia(nome));
+    }
+
+    /// <summary>
+    /// Carrega os niveis 
+    /// </summary>
+    public void NextLevel(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 
     /// <summary>
