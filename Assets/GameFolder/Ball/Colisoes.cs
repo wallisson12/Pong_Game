@@ -29,4 +29,13 @@ public class Colisoes : MonoBehaviour
             _p2++;
         }
     }
+
+    /// <summary>
+    /// Reseta a pontuacao do jogo
+    /// </summary>
+    public void ResetaPontos()
+    {
+        _p1 = 0;
+        _p2 = 0;
+    }
 }

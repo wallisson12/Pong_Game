@@ -23,7 +23,7 @@ public class BallController : MonoBehaviour
     [SerializeField]
     private AudioClip ping;
 
-    void Awake()
+    void Start()
     {
 
         audioS = GetComponent<AudioSource>();
