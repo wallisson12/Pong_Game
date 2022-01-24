@@ -33,7 +33,7 @@ public class MoveMenu : MonoBehaviour
             {
                 goRight = true;
             }
-
+                
             transform.position = Vector2.MoveTowards(transform.position, B.position, speed * Time.deltaTime);
         }
     }
