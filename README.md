@@ -5,7 +5,7 @@
 </a>
  
 <h3>Descrição:</h3>
-PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novidades, como vários mapas desafiadores,com obstáculos que podem facilitar ou dificultar que você vença seu adversario.
+PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novidades, como vários mapas desafiadores, com obstáculos que podem facilitar ou dificultar que você vença seu adversário.
 
 <h3>Controles</h3>
 <table><tbody><tr><td><strong>Player 1</strong><strong></strong></td><td><strong>Ações</strong></td></tr><tr><td><strong>Up Arrow<br>Down Arrow</strong></td><td class="text-center"><strong>Movement</strong><br></td></tr></tbody></table>
