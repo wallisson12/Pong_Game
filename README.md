@@ -1,8 +1,9 @@
 <h1> PongMaster </h1>
 <img align="center" width="800" heigth="700" src="https://img.itch.zone/aW1hZ2UvMTM2NzA0MS84ODIxOTY3LnBuZw==/original/XPBVay.png"></img> 
 
+<h3><p><b>PlayGame</b></p></h3>
 <a href="https://wallisson-de-jesus.itch.io/pong-master">
- <img src="https://cdn.icon-icons.com/icons2/1147/PNG/512/1486486316-arrow-film-movie-play-player-start-video_81236.png" width="100" height="100"></img>
+ <img src="https://cdn.icon-icons.com/icons2/1147/PNG/512/1486486316-arrow-film-movie-play-player-start-video_81236.png" width="50" height="50"></img>
 </a>
  
 <h3>Descrição:</h3>
