@@ -19,3 +19,12 @@ PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novi
   <img  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
   <img  height="30" width="30" src="https://cdn.icon-icons.com/icons2/112/PNG/512/visual_studio_18908.png">
   </p>
+  
+  <h1>Autor</h1>
+  
+  <b>Wallisson De Jesus Campos</b>
+  
+  <p> Portifólio: https://wallisson-de-jesus.itch.io </p>
+  <p> Linkedin: https://www.linkedin.com/in/wallissonjesus/ </p>
+  <p> Email: wallisson_wjc@outlook.com.br </p>
+  
