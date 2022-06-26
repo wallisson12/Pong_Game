@@ -1,4 +1,4 @@
-<h1> Pong_Game </h1>
+<h1> PongMaster </h1>
 <img align="center" width="800" heigth="700" src="https://img.itch.zone/aW1hZ2UvMTM2NzA0MS84ODIxOTY3LnBuZw==/original/XPBVay.png"></img> 
 
 <a href="https://wallisson-de-jesus.itch.io/pong-master">
