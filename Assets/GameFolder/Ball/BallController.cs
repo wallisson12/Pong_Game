@@ -5,28 +5,28 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     [Header("Corpo da bola")]
-    [Tooltip("RB da bola")]
     [SerializeField]
     private Rigidbody2D rb;
 
+    [Header("Explosao")]
+    [SerializeField]
+    private GameObject _explosion;
+
     [Header("Velocidade da bola")]
-    [Tooltip("Velocidade da bola")]
     [SerializeField]
     private float speed = 4f;
 
     private int forcaX;
     private int forcaY;
 
-    private AudioSource audioS;
 
     [Header("Som da bola")]
     [SerializeField]
-    private AudioClip ping;
+    private AudioClip ping,explosion;
 
     void Start()
     {
 
-        audioS = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         startBall();
 
@@ -41,11 +41,13 @@ public class BallController : MonoBehaviour
         forcaX = Random.Range(5, -5);
         forcaY = Random.Range(5, -5);
 
-        if (forcaX == 0)
+        if (forcaX < 2 && forcaX > -2)
         {
             forcaX = 2;
 
-        }else if (forcaY == 0)
+        }
+        
+        if (forcaY < 2 && forcaY > -2)
         {
             forcaY = 2;
         }
@@ -58,9 +60,21 @@ public class BallController : MonoBehaviour
         //Executa o audio
         Ping();
 
+        if (outro.gameObject.CompareTag("Ponto_p1"))
+        {
+            Colisoes.inst.AddPontos_P2();
+        }
+        else if(outro.gameObject.CompareTag("Ponto_p2"))
+        {
+            Colisoes.inst.AddPontos_P1();
+        }
+
         if (outro.gameObject.CompareTag("Ponto_p1") || outro.gameObject.CompareTag("Ponto_p2"))
         {
-            Restart();
+            Instantiate(_explosion, transform.position, Quaternion.identity);
+            Gerenciador_Sounds.inst.PlayEffects(explosion);
+            DesabilitaBall();
+            Invoke("Restart", 1.5f);
         }
     }
 
@@ -69,6 +83,7 @@ public class BallController : MonoBehaviour
     /// </summary>
     public void Restart()
     {
+         HabilitaBall();
          rb.velocity = Vector2.zero;
          transform.position = new Vector2(0f,0f);
          transform.GetComponent<TrailRenderer>().Clear();
@@ -80,6 +95,16 @@ public class BallController : MonoBehaviour
     /// </summary>
     void Ping()
     {
-        audioS.PlayOneShot(ping, 0.8f);
+        Gerenciador_Sounds.inst.PlayEffects(ping);
+    }
+
+    void DesabilitaBall()
+    {
+        gameObject.SetActive(false);
+    }
+
+    void HabilitaBall()
+    {
+        gameObject.SetActive(true);
     }
 }

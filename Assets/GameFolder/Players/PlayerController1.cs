@@ -10,7 +10,7 @@ public class PlayerController1 : MonoBehaviour
 
     [Tooltip("Posicao limite do player")]
     [SerializeField]
-    private float limitPosition = 2.45f;
+    private GameObject A, B;
 
     [Tooltip("Tela de pausa")]
     [Header("Tela de pausa")]
@@ -33,7 +33,7 @@ public class PlayerController1 : MonoBehaviour
     /// </summary>
     void MovePlayer()
     {
-        if (transform.position.y < limitPosition)
+        if (transform.position.y < A.transform.position.y)
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -43,10 +43,10 @@ public class PlayerController1 : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector2(transform.position.x,limitPosition);
+            transform.position = new Vector2(transform.position.x,A.transform.position.y);
         }
 
-        if (transform.position.y > -limitPosition)
+        if (transform.position.y > B.transform.position.y)
         {
             if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -55,7 +55,7 @@ public class PlayerController1 : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector2(transform.position.x, -limitPosition);
+            transform.position = new Vector2(transform.position.x, B.transform.position.y);
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Ponto_p1
   - Ponto_p2
+  - Stuck
   layers:
   - Default
   - TransparentFX

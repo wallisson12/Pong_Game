@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gerenciador_Jogo : MonoBehaviour
 {
@@ -8,13 +9,16 @@ public class Gerenciador_Jogo : MonoBehaviour
     [SerializeField]
     private GameObject screen_Player1, screen_Player2;
 
+    [Header("Button")]
+    private GameObject btn_Stuck;
+
     [Header("Ball")]
     [SerializeField]
     private Transform ball;
 
     [Header("Tempo de tela")]
     [SerializeField]
-    private float screenTime = 1f;
+    private float screenTime = 3f;
 
     [Header("Pontuacao")]
     [SerializeField]
@@ -23,11 +27,17 @@ public class Gerenciador_Jogo : MonoBehaviour
     [Header("Pontos maximos para o mapa")]
     [SerializeField]
     private int max_Pontos;
-    
+
+    void Awake()
+    {
+        btn_Stuck = GameObject.FindGameObjectWithTag("Stuck");
+
+        btn_Stuck.GetComponent<Button>().onClick.AddListener(ball.GetComponent<BallController>().Restart);
+    }
     void Update()
     {
-        ponto_p1 = ball.GetComponent<Colisoes>().P1;
-        ponto_p2 = ball.GetComponent<Colisoes>().P2;
+        ponto_p1 = Colisoes.inst._p1;
+        ponto_p2 = Colisoes.inst._p2;
 
         if (ponto_p1 >= max_Pontos)
         {
@@ -53,9 +63,9 @@ public class Gerenciador_Jogo : MonoBehaviour
         if (screenTime <= 0)
         {
             screen_Player1.SetActive(false);
-            ball.GetComponent<Colisoes>().ResetaPontos();
+            Colisoes.inst.ResetaPontos();
             ball.GetComponent<BallController>().Restart();
-            screenTime = 1.5f;
+            screenTime = 3f;
         }
     }
 
@@ -73,9 +83,9 @@ public class Gerenciador_Jogo : MonoBehaviour
         if (screenTime <= 0)
         {
             screen_Player2.SetActive(false);
-            ball.GetComponent<Colisoes>().ResetaPontos();
+            Colisoes.inst.ResetaPontos();
             ball.GetComponent<BallController>().Restart();
-            screenTime = 1.5f;
+            screenTime = 3f;
 
         }
     }

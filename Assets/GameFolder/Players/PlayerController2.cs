@@ -10,7 +10,7 @@ public class PlayerController2 : MonoBehaviour
 
     [Tooltip("Posicao limite do player")]
     [SerializeField]
-    private float limitPosition = 2.45f;
+    private GameObject A, B;
 
     void Update()
     {
@@ -22,7 +22,7 @@ public class PlayerController2 : MonoBehaviour
     /// </summary>
     void MovePlayer2()
     {
-        if (transform.position.y < limitPosition)
+        if (transform.position.y < A.transform.position.y)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -32,10 +32,10 @@ public class PlayerController2 : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector2(transform.position.x, limitPosition);
+            transform.position = new Vector2(transform.position.x, A.transform.position.y);
         }
 
-        if (transform.position.y > -limitPosition)
+        if (transform.position.y > B.transform.position.y)
         {
             if (Input.GetKey(KeyCode.S))
             {
@@ -44,7 +44,7 @@ public class PlayerController2 : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector2(transform.position.x, -limitPosition);
+            transform.position = new Vector2(transform.position.x, B.transform.position.y);
         }
     }
 }
