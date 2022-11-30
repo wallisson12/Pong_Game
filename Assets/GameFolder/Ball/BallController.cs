@@ -73,6 +73,7 @@ public class BallController : MonoBehaviour
         {
             Instantiate(_explosion, transform.position, Quaternion.identity);
             Gerenciador_Sounds.inst.PlayEffects(explosion);
+            ShakeCam.inst.Shake();
             DesabilitaBall();
             Invoke("Restart", 1.5f);
         }

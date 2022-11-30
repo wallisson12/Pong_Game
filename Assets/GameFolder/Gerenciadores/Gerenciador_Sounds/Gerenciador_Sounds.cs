@@ -20,8 +20,6 @@ public class Gerenciador_Sounds : MonoBehaviour
         
     }
 
-
-
     public void PlayEffects(AudioClip audioClip)
     {
         _effects.PlayOneShot(audioClip, 0.8f);

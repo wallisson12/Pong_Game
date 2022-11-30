@@ -354,10 +354,10 @@ RectTransform:
   m_Father: {fileID: 79465486}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.46235296, y: 0.85347295}
-  m_AnchorMax: {x: 0.512, y: 0.9413682}
-  m_AnchoredPosition: {x: 10.100014, y: 6.5000305}
-  m_SizeDelta: {x: 29.6694, y: 29}
+  m_AnchorMin: {x: 0.48125002, y: 0.8802227}
+  m_AnchorMax: {x: 0.51825005, y: 0.9435909}
+  m_AnchoredPosition: {x: 0.10001373, y: 0.000030517578}
+  m_SizeDelta: {x: 39.6694, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168196499
 MonoBehaviour:
@@ -1367,6 +1367,8 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1484,6 +1486,37 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e729566eb698a049859ac23abf52d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &519420035
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb34eab3180cbba4ab33a04298801dcd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &638257263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1916,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7411765, g: 0.627451, b: 0.34901962, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2660,7 +2693,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7ff1ae074fc38f2478809626be766f2b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2885,10 +2918,10 @@ RectTransform:
   m_Father: {fileID: 79465486}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.499989, y: 184.30003}
-  m_SizeDelta: {x: 22.1451, y: 20.3576}
+  m_AnchorMin: {x: 0.429853, y: 0.884668}
+  m_AnchorMax: {x: 0.48250002, y: 0.9325547}
+  m_AnchoredPosition: {x: -0.2599945, y: 0.30003357}
+  m_SizeDelta: {x: -0.33000183, y: -1.6399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282671155
 MonoBehaviour:
@@ -3242,10 +3275,10 @@ RectTransform:
   m_Father: {fileID: 79465486}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.3, y: 184.7}
-  m_SizeDelta: {x: 22.1451, y: 20.3576}
+  m_AnchorMin: {x: 0.51825005, y: 0.884668}
+  m_AnchorMax: {x: 0.56575, y: 0.9325547}
+  m_AnchoredPosition: {x: -0.34999847, y: 0.69999695}
+  m_SizeDelta: {x: 0.84000015, y: -1.6399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436958664
 MonoBehaviour:
@@ -3566,8 +3599,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 591874561
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3688,10 +3721,10 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Time: 0.5
+  m_SortingLayerID: 591874561
+  m_SortingLayer: 4
+  m_SortingOrder: -1
+  m_Time: 0.3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.3071236
@@ -3722,9 +3755,9 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 0.7665784, b: 0.23113209, a: 0.9137255}
-      key2: {r: 1, g: 0.033018887, b: 0.033018887, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
+      key1: {r: 1, g: 0.7665784, b: 0.23113209, a: 0.84313726}
+      key2: {r: 0.8396226, g: 0.2811944, b: 0.2811944, a: 0}
+      key3: {r: 1, g: 0.033018887, b: 0.033018887, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
@@ -3732,29 +3765,29 @@ TrailRenderer:
       ctime0: 4626
       ctime1: 26407
       ctime2: 53970
-      ctime3: 0
+      ctime3: 62066
       ctime4: 0
       ctime5: 0
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
+      atime1: 44140
+      atime2: 65535
+      atime3: 65535
       atime4: 0
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 3
-      m_NumAlphaKeys: 2
-    numCornerVertices: 20
+      m_NumAlphaKeys: 3
+    numCornerVertices: 60
     numCapVertices: 0
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.2
+  m_MinVertexDistance: 0.5
   m_Autodestruct: 0
   m_Emitting: 1
 --- !u!1 &1526941158
@@ -4206,7 +4239,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7411765, g: 0.627451, b: 0.34901962, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
