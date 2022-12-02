@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 1398858258196736013, guid: d7030ca4d2412c94abe480cc575dafd2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7030ca4d2412c94abe480cc575dafd2, type: 3}
 --- !u!4 &37668438 stripped
