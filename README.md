@@ -7,11 +7,11 @@
 </a>
  
 <h3>Descrição:</h3>
-PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novidades, como vários mapas desafiadores, com obstáculos que podem facilitar ou dificultar que você vença seu adversário.
+- PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novidades, como vários mapas desafiadores, com obstáculos que podem facilitar ou dificultar que você vença seu adversário.
+<br>
+<br>
+- Nesse projeto trabalhei como Programador e Game Designer, minha prioridade foi aplicar Game Juice e Game Feel, como sistema de partículas e iluminação URP, para melhorar a identidade visual.
 
-<h3>Controles</h3>
-<table><tbody><tr><td><strong>Player 1</strong><strong></strong></td><td><strong>Ações</strong></td></tr><tr><td><strong>Up Arrow<br>Down Arrow</strong></td><td class="text-center"><strong>Movement</strong><br></td></tr></tbody></table>
-<table><tbody><tr><td><strong>Player 2</strong></td><td><strong>Ações</strong></td></tr><tr><td><strong>W<br>S</strong></td><td class="text-center"><strong>Movement</strong><strong></strong><br></td></tr></tbody></table>
 
 <h3>Tecnologias Utilizadas</h3>
   
@@ -25,7 +25,7 @@ PongMaster é um jogo desenvolvido baseado no famoso jogo Pong, com algumas novi
   
   <b>Wallisson De Jesus Campos</b>
   
-  <p> Portifólio: https://wallisson-de-jesus.itch.io </p>
+  <p> Portifólio: https://www.behance.net/wallissondejesus </p>
   <p> Linkedin: https://www.linkedin.com/in/wallissonjesus/ </p>
   <p> Email: wallisson_wjc@outlook.com.br </p>
   
